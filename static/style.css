@@ -1,0 +1,146 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.mcq {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    cursor: pointer;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.answer {
+    color: green;
+    font-weight: bold;
+    display: none;
+    margin-top: 5px;
+} */
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.pdf-section {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.pdf-toggle {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.pdf-toggle:hover {
+    background-color: #357abd;
+}
+
+.pdf-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.pdf-content.active {
+    max-height: 5000px; /* enough to show all content */
+}
+
+.mcq-card {
+    background-color: #fefefe;
+    margin: 15px 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.mcq-card:hover {
+    transform: translateY(-2px);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.option {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover {
+    background-color: #d9ebff;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28a745;
+}
